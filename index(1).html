@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | Frontend Developer</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f8fafc;color:#172033;line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:#0f172a;color:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:800}.logo span{color:#38bdf8}
+nav a{color:#fff;text-decoration:none;margin-left:22px}
+.hero{padding:100px 7%;background:linear-gradient(120deg,#e0f2fe,#eef2ff)}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin-bottom:18px}
+.hero p{font-size:20px;max-width:650px;color:#475569;margin-bottom:28px}
+.btn{display:inline-block;background:#0284c7;color:#fff;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+section{padding:75px 7%}.title{text-align:center;margin-bottom:38px}.title h2{font-size:38px}
+.about{max-width:800px;margin:auto;text-align:center}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:28px;box-shadow:0 8px 25px rgba(15,23,42,.06)}
+.card h3{font-size:24px;margin-bottom:10px}.card p{color:#64748b;margin-bottom:20px}
+.tags{margin-bottom:20px}.tag{display:inline-block;background:#e0f2fe;color:#0369a1;padding:5px 10px;border-radius:20px;font-size:13px;margin:3px}
+.skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.skill{background:#fff;border:1px solid #e2e8f0;padding:12px 18px;border-radius:10px;font-weight:700}
+.contact{text-align:center;background:#e0f2fe}
+.contact p{margin:10px auto 22px;max-width:600px;color:#475569}
+footer{text-align:center;padding:22px;background:#0f172a;color:#cbd5e1}
+@media(max-width:750px){nav{display:none}.hero{padding:75px 5%}section{padding:55px 5%}.projects{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">My<span>Portfolio</span></div>
+  <nav><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <h1>Hi, I'm a Frontend Developer.</h1>
+  <p>I create clean, responsive and modern websites using HTML, CSS and JavaScript.</p>
+  <a class="btn" href="#projects">View My Work</a>
+</section>
+
+<section id="about">
+  <div class="title"><h2>About Me</h2></div>
+  <div class="about">
+    <p>I am learning frontend web development and building real-world projects. I focus on responsive layouts, clean design and user-friendly websites.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="title"><h2>My Projects</h2><p>Some of my frontend work</p></div>
+  <div class="projects">
+    <div class="card">
+      <h3>🍔 Restaurant Landing Page</h3>
+      <p>A modern responsive restaurant landing page with menu cards and an interactive order button.</p>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <a class="btn" href="../frontend_demo_sites/restaurant/index.html" target="_blank">Live Demo</a>
+    </div>
+    <div class="card">
+      <h3>🏫 Academy Website</h3>
+      <p>A clean responsive academy website with courses, statistics and an admission section.</p>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <a class="btn" href="../frontend_demo_sites/academy/index.html" target="_blank">Live Demo</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="title"><h2>My Skills</h2></div>
+  <div class="skills">
+    <div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div><div class="skill">Frontend Development</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Work Together</h2>
+  <p>I'm available for simple landing pages and frontend website projects.</p>
+  <a class="btn" href="mailto:your-email@example.com">Contact Me</a>
+</section>
+</main>
+
+<footer>© 2026 My Portfolio. Built with HTML, CSS & JavaScript.</footer>
+</body>
+</html>
