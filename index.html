@@ -3,60 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spice House | Restaurant</title>
+<title>Bright Future Academy</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;color:#222;background:#fff}
-header{background:#171717;color:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:24px;font-weight:800}.logo span{color:#f59e0b}
+body{font-family:Arial,sans-serif;color:#172033;background:#f8fafc}
+header{background:#0f172a;color:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:800}.logo span{color:#38bdf8}
 nav a{color:#fff;text-decoration:none;margin-left:22px}
-.hero{min-height:80vh;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(120deg,#fff7ed,#fed7aa)}
-.hero-text{max-width:650px}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:20px}
-.hero p{font-size:19px;line-height:1.7;margin-bottom:28px;color:#555}
-.btn{display:inline-block;background:#ea580c;color:#fff;padding:14px 24px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;font-weight:700}
+.hero{padding:90px 7%;background:linear-gradient(120deg,#e0f2fe,#eef2ff)}
+.hero h1{font-size:clamp(40px,6vw,68px);max-width:750px;line-height:1.05;margin-bottom:20px}
+.hero p{font-size:19px;line-height:1.7;max-width:650px;color:#475569;margin-bottom:28px}
+.btn{display:inline-block;background:#0284c7;color:#fff;padding:14px 24px;border:0;border-radius:8px;text-decoration:none;font-weight:700;cursor:pointer}
 section{padding:70px 7%}.title{text-align:center;margin-bottom:35px}.title h2{font-size:36px}
-.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{padding:25px;border-radius:14px;background:#fafafa;border:1px solid #eee}
-.card h3{margin-bottom:10px}.price{color:#ea580c;font-weight:800;margin-top:14px}
-.contact{text-align:center;background:#171717;color:#fff}.contact p{margin:12px 0 22px}
-footer{text-align:center;padding:20px;background:#111;color:#aaa}
-@media(max-width:750px){header{padding:16px 5%}nav{display:none}.hero{padding:70px 5%}.menu{grid-template-columns:1fr}section{padding:55px 5%}}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;padding:28px;border-radius:14px;border:1px solid #e2e8f0;box-shadow:0 8px 25px rgba(15,23,42,.05)}
+.card h3{margin-bottom:10px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}
+.stat{background:#0f172a;color:#fff;padding:25px;text-align:center;border-radius:12px}.stat strong{display:block;font-size:34px;color:#38bdf8;margin-bottom:6px}
+.admission{text-align:center;background:#e0f2fe}.admission p{margin:12px 0 22px;color:#475569}
+footer{text-align:center;padding:20px;background:#0f172a;color:#cbd5e1}
+@media(max-width:750px){nav{display:none}.hero{padding:70px 5%}section{padding:55px 5%}.features,.stats{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">Spice<span>House</span></div>
-  <nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#contact">Contact</a></nav>
+  <div class="logo">Bright <span>Future</span></div>
+  <nav><a href="#home">Home</a><a href="#courses">Courses</a><a href="#admission">Admission</a></nav>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Fresh Food. Bold Flavour.</h1>
-    <p>Delicious meals made fresh every day with quality ingredients and a passion for great taste.</p>
-    <a class="btn" href="#menu">Explore Menu</a>
+  <h1>Learn Today. Lead Tomorrow.</h1>
+  <p>Bright Future Academy helps students build strong academic foundations, practical skills and confidence for the future.</p>
+  <a class="btn" href="#courses">View Courses</a>
+</section>
+
+<section id="courses">
+  <div class="title"><h2>Our Courses</h2><p>Designed for focused learning</p></div>
+  <div class="features">
+    <div class="card"><h3>Computer Science</h3><p>Programming, web development and computer fundamentals.</p></div>
+    <div class="card"><h3>Mathematics</h3><p>Concept-focused classes with regular practice and tests.</p></div>
+    <div class="card"><h3>English</h3><p>Grammar, writing, speaking and communication skills.</p></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>500+</strong>Students</div>
+    <div class="stat"><strong>25+</strong>Teachers</div>
+    <div class="stat"><strong>10+</strong>Years Experience</div>
   </div>
 </section>
 
-<section id="menu">
-  <div class="title"><h2>Popular Menu</h2><p>Customer favourites</p></div>
-  <div class="menu">
-    <div class="card"><h3>Chicken Burger</h3><p>Crispy chicken, fresh vegetables and special sauce.</p><div class="price">Rs. 650</div></div>
-    <div class="card"><h3>Loaded Pizza</h3><p>Cheesy pizza topped with chicken, vegetables and herbs.</p><div class="price">Rs. 1,250</div></div>
-    <div class="card"><h3>BBQ Platter</h3><p>A delicious mix of grilled favourites served hot.</p><div class="price">Rs. 1,800</div></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Ready for a great meal?</h2>
-  <p>Call us or visit Spice House today.</p>
-  <button class="btn" onclick="showMessage()">Order Now</button>
+<section class="admission" id="admission">
+  <h2>Admissions Are Open</h2>
+  <p>Contact us to learn about classes, timings and admission requirements.</p>
+  <button class="btn" onclick="applyNow()">Apply Now</button>
 </section>
 </main>
 
-<footer>© 2026 Spice House. Demo website.</footer>
+<footer>© 2026 Bright Future Academy. Demo website.</footer>
 <script>
-function showMessage(){alert("Thanks! This is a demo order button.");}
+function applyNow(){alert("Thanks for your interest! This is a demo application button.");}
 </script>
 </body>
 </html>
